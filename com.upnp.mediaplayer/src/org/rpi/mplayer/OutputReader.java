@@ -121,7 +121,7 @@ public class OutputReader extends Thread {
 				if (temp.length() > 0) {
 					String[] splits = temp.split(";");
 					if (splits.length > 1) {
-						String[] fulls = splits[0].split("-");
+						String[] fulls = splits[0].split(" - ");
 						if (fulls.length >1) {
 							String title = fulls[1].trim();
 							String artist = fulls[0].trim();
